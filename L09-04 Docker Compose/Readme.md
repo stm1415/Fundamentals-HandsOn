@@ -2,33 +2,33 @@
 
 ## Build the app
 
-    docker compose build
+    docker-compose build
 
 ## Run the app
 
-    docker compose up -d
+    docker-compose up -d
 
 When the app will run, launch the voting app in your browser http://localhost:5000
 
 
 ## List the containers
 
-    docker compose ps
+    docker-compose ps
 
 ## Look at the db container logs
 
-    docker compose logs -f web-fe
+    docker-compose logs -f web-fe
 
 
 ## Compose V2 commands
 
 LS will list the current projects
 
-    docker compose ls
+    docker-compose ls
 
 ## Let's try to deploy a second version
 
-    docker compose up -d
+    docker-compose up -d
 
 This fails because we can only run an app a single time
 
@@ -36,7 +36,7 @@ This fails because we can only run an app a single time
 
 Let's now use a project name to see if we can deploy a second version
 
-    docker compose -p test up -d
+    docker-compose -p test up -d
 
 This fails because the localhost port 5000 is already assigned.
 
@@ -50,15 +50,18 @@ to
 
 ## Deploy again
 
-    docker compose -p test up -d
+    docker-compose -p test up -d
 
 How many versions do we have running?
 
-    docker compose ls
+    docker-compose ls
 
 ## Cleanup
 
-    docker compose down
-    docker compose ls
-    docker compose -p test down
-    docker compose ls
+    docker-compose down
+    docker-compose ls
+    docker-compose -p test down
+    docker-compose ls
+
+# list of containers runnign under a particular project
+docker ps --filter "label=com.docker.compose.project=test"
