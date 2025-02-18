@@ -3,7 +3,7 @@ services:
     build:
       args:
       - NODE_ENV=development
-      context: backend
+      context: backend # points to the backend directory
     command: npm run start-watch
     environment:
       - DATABASE_DB=example
