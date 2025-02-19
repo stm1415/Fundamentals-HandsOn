@@ -1,4 +1,5 @@
 # L18-02
+kubectl cluster-info
 
 ## Current context
 
