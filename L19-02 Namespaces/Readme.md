@@ -22,7 +22,7 @@ You get the pods from the default namespace.  Try getting the pods from the dock
 
 Change the namespace to the docker one and get the pods list.
 
-    kubectl config set-context --current --namespace=kube-system
+    kubectl config set-context docker-desktop --namespace=kube-system
 
 ## Get the pods
 
@@ -30,7 +30,7 @@ Change the namespace to the docker one and get the pods list.
 
 ## Now change back to the default namespace
 
-    kubectl config set-context --current --namespace=default
+    kubectl config set-context docker-desktop --namespace=default
     kubectl get pods
 
 ## Create and delete a namespace
