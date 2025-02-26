@@ -28,3 +28,6 @@ This will output the content of the Web page in the terminal.
 ## Cleanup
 
     kubectl delete -f two-containers.yaml --force --grace-period=0
+
+## Understanding
+BusyBox is a lightweight, multi-purpose Linux utility that provides a collection of common UNIX commands in a single executable. It is often referred to as the "Swiss Army Knife" of embedded Linux systems because it includes simplified versions of many standard Linux utilities like ls, cat, echo, grep, wget, and more.
