@@ -8,7 +8,7 @@ spec:
   ports:
   - port: 80
     name: web
-  clusterIP: None
+  clusterIP: None # configures the Service as a headless Service, meaning it does not have a cluster IP address and is used for direct communication between Pods
   selector:
     run: nginx-sts-demo
 ---
