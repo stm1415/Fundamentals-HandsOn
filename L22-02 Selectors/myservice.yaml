@@ -9,3 +9,5 @@ spec:
   selector:
     app: myapp
     type: front-end
+
+#this YAML configuration defines a Service that exposes port 80 and routes traffic to Pods labeled with `app: myapp` and `type: front-end`. This setup is useful for managing and exposing the front-end component of an application, ensuring that traffic is directed to the correct set of Pods within the Kubernetes cluster.

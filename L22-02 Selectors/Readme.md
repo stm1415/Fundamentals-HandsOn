@@ -4,6 +4,9 @@
 
     kubectl apply -f myapp.yaml
 
+## get list of containers running on the pod
+    kubectl get pod myapp-pod -o jsonpath='{.spec.containers[*].name}'
+
 ## Deploy the service
 
     kubectl apply -f myservice.yaml
