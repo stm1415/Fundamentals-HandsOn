@@ -17,7 +17,7 @@ Let's expose a deployment using a Load Balancer service, locally using Docker De
 ## Use the Load Balancer
 
 Since we are using Docker Desktop and that the Docker Desktop node is mapped to localhost, to reach the service you need to use **localhost**.
-
+   localhost:8080
 When using a Cloud provider, you would need to get a Load Balancer external IP address instead of localhost.
 
 Get the load balancer public IP address. This will output **localhost** on Docker Desktop.
