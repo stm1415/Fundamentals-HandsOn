@@ -67,7 +67,7 @@ or
 
 ## Get the deployment history
 
-    kubectl rollout status deployment/hello-dep
+    kubectl rollout history deployment/hello-dep
 
 ## How many ReplicaSets do we have?
 
