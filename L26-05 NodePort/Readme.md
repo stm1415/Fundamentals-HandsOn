@@ -18,6 +18,8 @@ Let's expose a deployment using a Nodeport service.
 
 Since we are using Docker Desktop and that the Docker Desktop node is mapped to localhost, to reach the service you need to use **localhost** + the **nodeport**.
 
+    http://localhost:32410/
+
 When using a Cloud provider, you would need to get a node IP address instead of localhost.
 
 Get the node public IP address
