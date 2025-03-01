@@ -23,4 +23,9 @@ spec:
           configMapKeyRef:
             name: cm-example
             key: city
+      - name: STATE
+        valueFrom:
+          configMapKeyRef:
+            name: cm-example
+            key: state
 
